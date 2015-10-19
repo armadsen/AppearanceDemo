@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppearanceDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CiO-2D-4vE">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Title" id="Dc2-4N-YeK">
+                                        <barButtonItem key="rightBarButtonItem" title="Nav Item" id="HgI-2R-7dd"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GHe-nZ-XZo">
+                                <rect key="frame" x="20" y="96" width="225" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="EKM-PY-ZI9"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ1-YA-eEr">
+                                <rect key="frame" x="20" y="143" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Wo-7J-t1b">
+                                <rect key="frame" x="20" y="198" width="150" height="2"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="12J-1H-wTq"/>
+                                </constraints>
+                            </progressView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9n-v0-ncS">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Item 1" id="uYe-YE-vF8"/>
+                                    <barButtonItem title="Item 2" id="oX2-kt-43x"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d9n-v0-ncS" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="5oN-8y-QhP"/>
+                            <constraint firstItem="GHe-nZ-XZo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HUT-Ue-xL9"/>
+                            <constraint firstItem="2Wo-7J-t1b" firstAttribute="top" secondItem="UQ1-YA-eEr" secondAttribute="bottom" constant="25" id="McL-fO-Z7h"/>
+                            <constraint firstItem="d9n-v0-ncS" firstAttribute="leading" secondItem="CiO-2D-4vE" secondAttribute="leading" id="TaI-dv-bD2"/>
+                            <constraint firstAttribute="trailing" secondItem="d9n-v0-ncS" secondAttribute="trailing" id="VDK-rT-pjb"/>
+                            <constraint firstItem="UQ1-YA-eEr" firstAttribute="leading" secondItem="GHe-nZ-XZo" secondAttribute="leading" id="VvC-5e-zCX"/>
+                            <constraint firstItem="d9n-v0-ncS" firstAttribute="trailing" secondItem="CiO-2D-4vE" secondAttribute="trailing" id="dhm-Ag-EyK"/>
+                            <constraint firstItem="d9n-v0-ncS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dla-5X-zHc"/>
+                            <constraint firstItem="UQ1-YA-eEr" firstAttribute="top" secondItem="GHe-nZ-XZo" secondAttribute="bottom" constant="19" id="eio-KR-ldm"/>
+                            <constraint firstItem="CiO-2D-4vE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fLt-Cc-VGn"/>
+                            <constraint firstItem="UQ1-YA-eEr" firstAttribute="leading" secondItem="2Wo-7J-t1b" secondAttribute="leading" id="lqx-3x-Iu6"/>
+                            <constraint firstItem="GHe-nZ-XZo" firstAttribute="top" secondItem="CiO-2D-4vE" secondAttribute="bottom" constant="32" id="xKA-g2-elC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="861" y="621"/>
         </scene>
     </scenes>
 </document>

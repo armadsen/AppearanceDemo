@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D9E4DF11BD4AB28001AF979 /* waves.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9E4DF01BD4AB28001AF979 /* waves.png */; settings = {ASSET_TAGS = (); }; };
 		9DCE12041BD4A5810095F250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE12031BD4A5810095F250 /* AppDelegate.swift */; };
 		9DCE12061BD4A5810095F250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE12051BD4A5810095F250 /* ViewController.swift */; };
 		9DCE12091BD4A5810095F250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE12071BD4A5810095F250 /* Main.storyboard */; };
 		9DCE120B1BD4A5810095F250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE120A1BD4A5810095F250 /* Assets.xcassets */; };
 		9DCE120E1BD4A5810095F250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE120C1BD4A5810095F250 /* LaunchScreen.storyboard */; };
+		9DCE12181BD4A6340095F250 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE12171BD4A6340095F250 /* AppearanceController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DCE121A1BD4A9CA0095F250 /* leopard.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE12191BD4A9CA0095F250 /* leopard.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D9E4DF01BD4AB28001AF979 /* waves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waves.png; sourceTree = "<group>"; };
 		9DCE12001BD4A5810095F250 /* AppearanceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppearanceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCE12031BD4A5810095F250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DCE12051BD4A5810095F250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		9DCE120A1BD4A5810095F250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DCE120D1BD4A5810095F250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DCE120F1BD4A5810095F250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DCE12171BD4A6340095F250 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppearanceController.swift; path = ../AppearanceController.swift; sourceTree = "<group>"; };
+		9DCE12191BD4A9CA0095F250 /* leopard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leopard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				9DCE12031BD4A5810095F250 /* AppDelegate.swift */,
 				9DCE12051BD4A5810095F250 /* ViewController.swift */,
+				9DCE12171BD4A6340095F250 /* AppearanceController.swift */,
 				9DCE12071BD4A5810095F250 /* Main.storyboard */,
 				9DCE120A1BD4A5810095F250 /* Assets.xcassets */,
 				9DCE120C1BD4A5810095F250 /* LaunchScreen.storyboard */,
 				9DCE120F1BD4A5810095F250 /* Info.plist */,
+				9DCE12191BD4A9CA0095F250 /* leopard.png */,
+				9D9E4DF01BD4AB28001AF979 /* waves.png */,
 			);
 			path = AppearanceDemo;
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DCE120E1BD4A5810095F250 /* LaunchScreen.storyboard in Resources */,
+				9DCE121A1BD4A9CA0095F250 /* leopard.png in Resources */,
+				9D9E4DF11BD4AB28001AF979 /* waves.png in Resources */,
 				9DCE120B1BD4A5810095F250 /* Assets.xcassets in Resources */,
 				9DCE12091BD4A5810095F250 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DCE12061BD4A5810095F250 /* ViewController.swift in Sources */,
+				9DCE12181BD4A6340095F250 /* AppearanceController.swift in Sources */,
 				9DCE12041BD4A5810095F250 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +295,7 @@
 				9DCE12141BD4A5810095F250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
